@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="55%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+    <linearGradient id="t1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="t2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="t3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="rgba(0,0,0,0.5)"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="45" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Ambient glows -->
+  <circle cx="280" cy="200" r="200" fill="#3b82f6" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="950" cy="400" r="180" fill="#7c3aed" opacity="0.08" filter="url(#glow)"/>
+
+  <!-- Thumbnail card 1: Simple Dark (blue) -->
+  <g transform="translate(610, 55)" filter="url(#shadow)">
+    <rect width="240" height="135" rx="10" fill="url(#t1)"/>
+    <rect x="20" y="42" width="200" height="12" rx="6" fill="rgba(255,255,255,0.7)"/>
+    <rect x="20" y="62" width="140" height="8" rx="4" fill="rgba(255,255,255,0.4)"/>
+    <rect x="20" y="105" width="60" height="3" rx="2" fill="rgba(255,255,255,0.3)"/>
+    <!-- YouTube badge -->
+    <rect x="188" y="108" width="38" height="16" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="207" y="120" font-family="sans-serif" font-size="8" fill="white" text-anchor="middle">YouTube</text>
+  </g>
+
+  <!-- Thumbnail card 2: Neon Purple -->
+  <g transform="translate(870, 40)" filter="url(#shadow)">
+    <rect width="240" height="135" rx="10" fill="url(#t2)"/>
+    <rect x="20" y="42" width="200" height="12" rx="6" fill="rgba(255,255,255,0.7)"/>
+    <rect x="20" y="62" width="160" height="8" rx="4" fill="rgba(255,255,255,0.4)"/>
+    <rect x="20" y="105" width="60" height="3" rx="2" fill="rgba(255,255,255,0.3)"/>
+    <!-- note badge -->
+    <rect x="188" y="108" width="30" height="16" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="203" y="120" font-family="sans-serif" font-size="8" fill="white" text-anchor="middle">note</text>
+  </g>
+
+  <!-- Thumbnail card 3: Sunset (orange) -->
+  <g transform="translate(740, 240)" filter="url(#shadow)">
+    <rect width="240" height="135" rx="10" fill="url(#t3)"/>
+    <rect x="20" y="42" width="200" height="12" rx="6" fill="rgba(255,255,255,0.7)"/>
+    <rect x="20" y="62" width="120" height="8" rx="4" fill="rgba(255,255,255,0.4)"/>
+    <rect x="20" y="105" width="60" height="3" rx="2" fill="rgba(255,255,255,0.3)"/>
+    <!-- OGP badge -->
+    <rect x="188" y="108" width="30" height="16" rx="4" fill="rgba(255,255,255,0.2)"/>
+    <text x="203" y="120" font-family="sans-serif" font-size="8" fill="white" text-anchor="middle">OGP</text>
+  </g>
+
+  <!-- Left: Main text -->
+  <text x="72" y="205" font-family="'Helvetica Neue', Arial, sans-serif" font-size="78" font-weight="900" fill="white" letter-spacing="-2" opacity="0.97">Thumbly</text>
+
+  <text x="76" y="258" font-family="sans-serif" font-size="22" fill="rgba(255,255,255,0.72)">&#12469;&#12512;&#12493;&#12452;&#12523;&#20316;&#25104;&#12484;&#12540;&#12523;</text>
+
+  <rect x="76" y="282" width="44" height="3" rx="2" fill="rgba(255,255,255,0.25)"/>
+
+  <text x="76" y="325" font-family="sans-serif" font-size="16" fill="rgba(255,255,255,0.58)">YouTube &#12539; note &#12539; OGP &#12395;&#23550;&#24540;</text>
+  <text x="76" y="349" font-family="sans-serif" font-size="16" fill="rgba(255,255,255,0.58)">10&#31278;&#20197;&#19978;&#12398;&#12486;&#12531;&#12503;&#12524;&#12540;&#12488;</text>
+  <text x="76" y="373" font-family="sans-serif" font-size="16" fill="rgba(255,255,255,0.58)">&#12458;&#12540;&#12503;&#12531;&#12539;&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;&#19981;&#35201;</text>
+
+  <!-- Monthly badge -->
+  <rect x="76" y="408" width="178" height="30" rx="15" fill="rgba(124,58,237,0.3)" stroke="rgba(124,58,237,0.6)" stroke-width="1"/>
+  <text x="165" y="428" font-family="sans-serif" font-size="13" font-weight="600" fill="rgba(255,255,255,0.9)" text-anchor="middle">Pro&#29256; &#26376;&#39069;500&#20870; &#183; &#28961;&#26009;&#12391;&#35430;&#12379;&#12427;</text>
+
+  <!-- URL -->
+  <rect x="76" y="520" width="224" height="32" rx="16" fill="rgba(255,255,255,0.1)"/>
+  <text x="188" y="541" font-family="monospace" font-size="14" fill="rgba(255,255,255,0.72)" text-anchor="middle">thumbly.vercel.app</text>
+</svg>
